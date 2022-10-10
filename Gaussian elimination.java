@@ -89,9 +89,6 @@ class Gauss {
       Print(coefficients,constants,row,colum);
       EchelonForm variable = getEchelonForm(coefficients,constants,row,colum);
       Print(coefficients,constants,row,colum);
-      // coefficients = BackSubstitutionForCoefficients(coefficients,row);
-      // constants = BackSubstitutionForConstants(coefficients,constants,row);
-      // Print(coefficients,constants,row,colum);
       float[] answer = Solution(coefficients,constants,row);
       PrintSolution(answer, row);
 }
